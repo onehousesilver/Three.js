@@ -1,0 +1,19 @@
+/* 외곽선 제거, margin 0 */
+* {
+  outline: none;
+  margin: 0;
+}
+
+/* scroll바 제거 */
+body {
+  overflow: hidden;
+}
+
+/* 페이지 꽉 채우기 */
+#webgl-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
