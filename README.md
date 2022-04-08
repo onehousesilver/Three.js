@@ -1,6 +1,14 @@
 three.js
 ========
 
+```
+three.js 입문 강좌 연습
+출처: https://www.youtube.com/watch?v=ZGACJosABBw&list=PLe6NQuuFBu7HqxY10b6gNu6iisT2-rZv-
+
+2022-04-09 ~ 
+```
+
+
 [![NPM Package][npm]][npm-url]
 [![Build Size][build-size]][build-size-url]
 [![NPM Downloads][npm-downloads]][npmtrends-url]
