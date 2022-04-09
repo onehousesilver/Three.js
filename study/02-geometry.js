@@ -1,6 +1,6 @@
 // Three.js 불러오기
 import * as THREE from "../build/three.module.js";
-import { OrbitControls } from "../examples/jsm/controls/OrbitControls.js"
+import { OrbitControls } from "../examples/jsm/controls/OrbitControls.js";
 class App {
 	// 밑줄로 시작하는 field와 method?
 	// 밑줄로 시작하는 이유는?
@@ -73,7 +73,19 @@ class App {
 	_setupModel() {
 		// boxgeometry 클래스를 이용해 객체 생성
 		// 3개의 인자값 (세로, 가로, 깊이)
-		const geometry = new THREE.BoxGeometry(1, 1, 1, 2, 2, 2);
+		// #3. part1
+		// const geometry = new THREE.BoxGeometry(1, 1, 1, 2, 2, 2);
+		// #4. part2
+		// CircleGeometry 원모양
+		// const geometry = new THREE.CircleGeometry(1, 32, Math.PI,  Math.PI);
+		// ConeGeometry 원뿔모양
+		// const geometry = new THREE.ConeGeometry(0.5, 1.6, 16, 9, true, 0, Math.PI*2);
+		// CylinderGeometry 원통모양
+		// const geometry = new THREE.CylinderGeometry(0.9, 0.9, 1.6, 32, 12, true, 0, Math.PI * 2)
+		// SphereGeometry 구형태
+		// const geometry = new THREE.SphereGeometry(0.8)
+		// RingGeometry
+		const geometry = new THREE.RingGeometry(0.8)
 		// 정육면체 색상
 		const fillMaterial = new THREE.MeshPhongMaterial({ color: 0x515151 });
 		const cube = new THREE.Mesh(geometry, fillMaterial);
